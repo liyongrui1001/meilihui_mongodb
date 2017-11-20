@@ -1,0 +1,131 @@
+.car {
+  width: 1040px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.car .car-top {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px gray solid;
+}
+.car .car-top .car-topl {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.car .car-top .car-topr {
+  margin-top: 20px;
+  color: gray;
+}
+.car .car-cen {
+  width: 1040px;
+  height: 40px;
+  background: pink;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.car .car-cen .car-cc {
+  margin-left: 20px;
+  color: red;
+}
+.car .car-bottom {
+  width: 1040px;
+  min-height: 500px;
+}
+.car .car-bottom .car-bt {
+  overflow: hidden;
+}
+.car .car-bottom .car-bt li {
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.car .car-bottom .car-bb {
+  min-height: 450px;
+  display: none;
+}
+.car .car-bottom .car-bb .car-bbp {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin: 30px auto;
+}
+.car .car-bottom .car-bb .car-bbt {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  background: #eee;
+  height: 50px;
+  line-height: 50px;
+}
+.car .car-bottom .car-bb .car-bbtb {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  padding-left: 44px;
+  border-bottom: 1px gray solid;
+}
+.car .car-bottom .car-bb .car-bbc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  height: 120px;
+  line-height: 120px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px gray solid;
+}
+.car .car-bottom .car-bb .car-bbc .car-bbc1 {
+  display: flex;
+  align-items: center;
+}
+.car .car-bottom .car-bb .car-bbc .car-ji,
+.car .car-bottom .car-bb .car-bbc .car-number {
+  width: 30px;
+  height: 30px;
+}
+.car .car-bottom .car-bb .car-bbc .car-number {
+  text-align: center;
+}
+.car .car-bottom .car-bb .car-bbcb {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  line-height: 50px;
+  background: #eee;
+}
+.car .car-bottom .car-bb .car-bbcb .car-bbnum {
+  color: red;
+  font-size: 20px;
+}
+.car .car-bottom .car-bb .car-bbcb .car-bbcbl {
+  padding-left: 44px;
+}
+.car .car-bottom .car-bb .car-bbcb .car-bbcbl .car-bbshan {
+  width: 60px;
+  height: 30px;
+  background: white;
+  border: 1px black solid;
+  margin-left: 20px;
+}
+.car .car-bottom .car-bb .car-bbcb .car-bbcbr .car-bbjie {
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  background: red;
+  color: white;
+}
+.car .car-bottom .car-bb .car-bbcb .car-bbcbr .car-bbcnum {
+  color: red;
+  font-size: 20px;
+}
+.car-on {
+  background: #eee;
+}

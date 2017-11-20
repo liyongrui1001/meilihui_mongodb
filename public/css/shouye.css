@@ -1,0 +1,80 @@
+	/*大图*/
+	
+	#main #big {
+	    width: 100%;
+	    height: 524px;
+	    overflow: hidden;
+	    margin: 0 auto;
+	    min-width: 960px;
+	}
+	/*主体*/
+	
+	.main_pic {
+	    width: 1040px;
+	    background: white;
+	    margin: 0 auto;
+	    padding: 10px;
+	}
+	
+	.jinri,
+	.remai,
+	.nvshi,
+	.nanshi,
+	.meizhuang,
+	.jiaju,
+	.yingtong,
+	.haiwai {
+	    overflow: hidden;
+	}
+	
+	.imp {
+	    float: left;
+	    margin: 10px;
+	}
+	
+	.img-top-zi {
+	    height: 50px;
+	    font-size: 30px;
+	    margin: 10px;
+	}
+	
+	.nvshi .ban,
+	.nanshi .ban,
+	.meizhuang .ban,
+	.jiaju .ban,
+	.yingtong .ban,
+	.haiwai .ban {
+	    width: 320px;
+	    height: 484px;
+	    overflow: hidden;
+	}
+	
+	.img-more {
+	    display: block;
+	    float: right;
+	}
+	
+	.nanshi-ban {
+	    position: absolute;
+	    left: -320px;
+	}
+	
+	.meizhuang-ban {
+	    position: absolute;
+	    left: -640px;
+	}
+	
+	.jiaju-ban {
+	    position: absolute;
+	    left: -960px;
+	}
+	
+	.yingtong-ban {
+	    position: absolute;
+	    left: -1280px;
+	}
+	
+	.haiwai-ban {
+	    position: absolute;
+	    left: -1600px;
+	}

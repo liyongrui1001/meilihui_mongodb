@@ -1,0 +1,54 @@
+.paym {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.paym h1 {
+  font-weight: normal;
+  border-bottom: 1px black solid;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.paym p {
+  line-height: 30px;
+}
+.paym img {
+  border: 1px gray solid;
+  margin: 0 20px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.paym .minute,
+.paym .second,
+.paym .money {
+  color: red;
+  font-size: 18px;
+}
+.paym .paym-di {
+  width: 100px;
+  height: 31px;
+  background: white;
+  text-align: center;
+  line-height: 30px;
+  border: 1px black solid;
+  border-bottom: none;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+.paym .paym-choose {
+  width: 800px;
+  height: 70px;
+  padding-top: 20px;
+  border: 1px black solid;
+}
+.paym .paym-btn {
+  width: 200px;
+  height: 40px;
+  background: red;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+}

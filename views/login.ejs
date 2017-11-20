@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/sign.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+</head>
+
+<body>
+    <div class="logn-wrap">
+        <div class="login-container">
+            <div class="login-logo">
+                <a href="/"><img src="images/logo.jpg" /></a>
+                <span class="loginlo">全球奢品&nbsp;&nbsp;正品保证</span>
+            </div>
+            <div class="login-content">
+                <div class="login-main">
+                    <div class="hydl-regsiter">
+                        <span class="hydl-l">会员登陆</span>
+                        <span class="hydl-r">没有账号？<a href="/sign">立即注册</a></span>
+                    </div>
+                    <div class="hydl-login">
+                        <p>账户名：<input type="text" id="uname" style="height: 30px;width: 250px;" placeholder="手机号/邮箱" /><br/>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span id="login-s1"></span></p>
+                        <p style="top:50px">密码：<input type="password" id="upwd" style="height: 30px;width: 250px;" /><br/>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span id="login-s2"></span></p>
+
+                        <p style="top:100px"><input type="button" id="sign-btn" value="会员登陆" style="height: 30px;width: 250px;" /></p>
+                        <p style="top:150px" class="hydl-login-auto"><span><input type="checkbox" checked/>下次自动登录</span><span><a href="javascript:;">忘记密码</a></span></p>
+                        <p style="top:200px;">联名登陆：<span style="display: block; width: 250px; height: 30px;"><a href="javascript:;"><img src="images/base_z_weibo.jpg"</a></span></p>
+                    </div>
+                    <div class="login-er">
+                        <img src="images/sign-erweima.jpg" class="login-erl" />
+                        <div class="login-err">
+                            <p>扫描二维码或发送短信</p>
+                            <p>"MLH"到"12114"</p>
+                            <p>下载APP尊享独家优惠</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_advantage">
+                <ul class="footer_advantage_u">
+                    <li><i class="iconfont">&#x3449;</i><a class="a1" href="javascript:;">100%正品保证</a></li>
+                    <li><i class="iconfont">&#x3487;</i><a class="a2" href="javascript:;">满688免运费</a></li>
+                    <li><i class="iconfont">&#x3467;</i><a class="a3" href="javascript:;">7天无条件退货</a></li>
+                    <li><i class="iconfont">&#x3477;</i><a class="a4" href="javascript:;">超值折扣</a></li>
+                    <li><i class="iconfont">&#xf00f9;</i><a class="a5" href="javascript:;">9点限时闪购</a></li>
+                    <li class="footer_advantage_right"><i class="iconfont">&#xf012b;</i><a class="a6" href="javascript:;">400－664－6698</a></li>
+                </ul>
+
+                <p class="footer_copyright">
+                    <span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有</span>&nbsp;&nbsp;浙ICP备16004860号-1
+                </p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/ajax1.js"></script>
+<script type="text/javascript">
+    $("#sign-btn").click(function() {
+
+        ajax({
+            url: "/login/submit",
+            type: "post",
+            data: {
+                username: $("#uname").val(),
+                password: $("#upwd").val()
+            },
+            success: function(res) {
+                alert(res);
+                if (JSON.parse(res).err == 0) {
+                    location.href = "/";
+                }
+            }
+        })
+
+    })
+</script>

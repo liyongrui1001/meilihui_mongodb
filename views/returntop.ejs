@@ -1,0 +1,29 @@
+<!--公共返回头部-->
+<div class="returnTop">
+    <div class="top"><span>100%</span><br>正品保证</div>
+    <div class="erweima">
+        <span>下载APP</span>
+        <img src="images/QR_code.png" width="85" height="85">
+        <span>微信公众号</span>
+        <img src="images/wechat-2dcode.png" width="80" height="80">
+    </div>
+    <div class="clickOn" style="display: none"><a href="javascript:;">返回顶部</a></div>
+</div>
+<script>
+    $(window).scroll(function() {
+        var sTop = $(document).scrollTop();
+        // console.log(sTop)
+        $(".returnTop").css("top", sTop + 400)
+        if (sTop > 500) {
+
+            $(".clickOn").show();
+        } else {
+            $(".clickOn").hide();
+        }
+        $(".clickOn").click(function() {
+            $("body,html").stop().animate({
+                "scrollTop": 0
+            })
+        })
+    })
+</script>

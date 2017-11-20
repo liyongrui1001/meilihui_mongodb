@@ -1,0 +1,87 @@
+#list-main {
+  width: 1040px;
+  margin: 0 auto;
+}
+.list-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px #eee solid;
+  line-height: 30px;
+}
+.list-top .list-tl a:hover {
+  color: red;
+}
+.list-ttop {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+}
+.list-ttop .list-ttll {
+  font-size: 25px;
+}
+.list-ttop .list-ttlr {
+  font-size: 18px;
+  color: red;
+}
+.list-center {
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px #eee solid;
+  box-shadow: 10px 10px 5px #eee;
+}
+.list-center .list-ct {
+  border-bottom: 1px #eee solid;
+  line-height: 40px;
+}
+.list-center .list-cb {
+  margin-top: 20px;
+  line-height: 25px;
+}
+.list-center .list-cb a {
+  text-decoration: underline;
+}
+.list-ccenter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.list-main {
+  overflow: hidden;
+}
+.shop-box {
+  width: 235px;
+  height: 400px;
+  float: left;
+  margin: 12.5px;
+  position: relative;
+}
+.shop-box .shop-tui {
+  width: 100px;
+  height: 30px;
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 10px;
+  opacity: .6;
+}
+.shop-box .shop-small {
+  position: absolute;
+  width: 235px;
+  top: 313px;
+  background: #fff;
+  display: none;
+}
+.shop-box .shop-small li {
+  float: left;
+  border: 1px #eee solid;
+  margin: 5px;
+}
+.shop-box .shop-small li img {
+  width: 50px;
+  height: 67px;
+}

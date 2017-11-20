@@ -1,0 +1,193 @@
+.pay-top {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.pay-top h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px black solid;
+  font-weight: normal;
+}
+.pay-top h3 {
+  margin-top: 20px;
+  border-bottom: 2px black solid;
+  padding-bottom: 10px;
+}
+.pay-top .dizhi {
+  padding-bottom: 10px;
+}
+.pay-top .dizhi input {
+  width: 300px;
+  height: 30px;
+}
+.pay-top .dizhi select {
+  width: 95px;
+  height: 30px;
+}
+.pay-top .pay-ti {
+  width: 100px;
+  height: 30px;
+  background: red;
+  border: none;
+  color: white;
+  margin-left: 70px;
+}
+.pay-top .addres {
+  width: 300px;
+  min-height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px gray solid;
+  box-shadow: 5px 5px 5px #eee;
+}
+.pay-top .addres p {
+  margin-top: 5px;
+}
+.pay-top .addres .add-top {
+  display: flex;
+  justify-content: space-between;
+}
+.pay-top .addres .add-top a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.pay-top .addres .add-top span {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.pay-top .add-new {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  background: red;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.pay-center {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.pay-center h3 {
+  border-bottom: 2px black solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.pay-center .pay-cb {
+  margin: 10px 0;
+}
+.pay-center .pay-cbt {
+  width: 100px;
+  height: 31px;
+  background: white;
+  text-align: center;
+  line-height: 30px;
+  border: 1px black solid;
+  border-bottom: none;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+.pay-center .pay-cbb {
+  width: 800px;
+  height: 70px;
+  padding-top: 20px;
+  border: 1px black solid;
+}
+.pay-center .pay-cbb img {
+  border: 1px gray solid;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.pay-bottom {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.pay-bottom h3 {
+  border-bottom: 2px black solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.pay-bottom .pay-bt {
+  border: 1px gray solid;
+  box-shadow: 5px 5px 5px gray;
+  padding-left: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.pay-bottom .pay-pp {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px black solid;
+}
+.pay-bottom .pay-pp .pay-ppl {
+  width: 500px;
+}
+.pay-bottom .pay-pp .pay-ppl .pay-ppl1 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.pay-bottom .pay-pp .pay-ppl .pay-ppl2 {
+  font-weight: bold;
+}
+.pay-bottom .pay-shop {
+  border-bottom: 1px gray solid;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay-bottom .pay-shop .pay-shopl {
+  width: 500px;
+  overflow: hidden;
+}
+.pay-bottom .pay-shop .pay-shopl img {
+  display: block;
+  float: left;
+  border: 1px gray solid;
+  margin-right: 10px;
+}
+.pay-bottom .pay-shop .pay-shopl .pay-shoplr {
+  float: left;
+}
+.pay-bottom .pay-bb {
+  margin-top: 20px;
+}
+.pay-bottom .pay-bbb {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.pay-bottom .pay-bbb .pay-you {
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px black solid;
+}
+.pay-bottom .pay-bbb .pay-sum {
+  color: red;
+  font-size: 20px;
+}
+.pay-bottom .pay-bbb .pay-btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background: red;
+  color: white;
+  border: none;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}

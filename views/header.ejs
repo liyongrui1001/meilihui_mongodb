@@ -1,0 +1,53 @@
+<!--公共头部-->
+<div class="header">
+    <div class="header_top">
+        <ul class="header_top_left">
+            <li class="zhuce">
+                <a href="/sign" class="zhuce-a">
+                    <img src="images/zhuceyouli.gif" />注册有礼
+                </a>
+            </li>|
+            <li>
+                <a href="/login" class="denglu-a">
+                    登陆
+                </a>
+            </li>|
+            <li><a href="javascript:;">收藏</a></li>
+        </ul>
+        <ul class="header_top_right">
+            <li><a href="javascript:;">在线咨询</a></li>|
+            <li><a href="javascript:;" id="ph">手机版</a>
+                <img src="images/QR_code.png" class="er" />
+            </li>|
+            <li>
+                <a href="javascript:;"><img src="images/base_z_weibo.jpg" /></a>
+            </li>
+        </ul>
+    </div>
+    <div class="header_bottom">
+        <a href="/"><img src="images/logo.jpg" /></a>
+        <span class="lo">全球奢品&nbsp;&nbsp;正品保证</span>
+    </div>
+</div>
+<script>
+    //console.log(user)
+    $("#ph").hover(function() {
+        $(this).next().show()
+    }, function() {
+        $(this).next().hide()
+    })
+    $(".zhuce-a").click(function() {
+        location.href = "/sign";
+    })
+    var uname = localStorage.getItem('username') ? JSON.parse(localStorage.getItem('username')) : [];
+    if (!(uname == "")) {
+        $(".zhuce-a").html(uname);
+        $(".denglu-a").html("退出");
+        $(".zhuce-a").click(function() {
+            location.href = "/account";
+        })
+    };
+    $(".denglu-a").click(function() {
+        location.href = "/login";
+    })
+</script>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/shouye.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/account.css" />
+</head>
+
+<body>
+    <% include ./header.ejs %>
+        <% include ./nav.ejs %>
+            <div class="account">
+                <h1>我的魅力惠</h1>
+                <ul class="acc-left">
+                    <li class="acc-on">最新状态</li>
+                    <li>订单查询</li>
+                    <li>申请退换货</li>
+                    <li>购物评论</li>
+                    <li>我的收藏</li>
+                    <li>个人信息维护</li>
+                    <li>修改密码</li>
+                    <li>地址信息维护</li>
+                    <li>账户余额</li>
+                    <li>优惠券</li>
+                </ul>
+                <div class="acc-rbox">
+                    <div class="acc-right" style="display: block;">
+                        <h2>最新状态</h2>
+                        <img src="images/headImg.png" style="display: block; float: left;" />
+                        <div class="acc-right1">
+                            <p style="margin-bottom: 10px;">欢迎您</p>
+                            <p>订购记录：<span style="color: red;">0</span>&ensp;笔订购记录（最近30天内）</p>
+                            <p>待评价：&ensp;&ensp;<span style="color: red;">0</span>&ensp;个</p>
+                            <p>优惠券：&ensp;&ensp;<span style="color: red;">0</span>&ensp;张可使用</p>
+                        </div>
+                    </div>
+                    <div class="acc-right">
+                        <h2>订单查询</h2>
+                    </div>
+                    <div class="acc-right">
+                        <h2>申请退换货</h2>
+                    </div>
+                    <div class="acc-right">
+                        <h2>购物评论</h2>
+                        <p style="border-bottom: 1px black solid;padding-bottom: 10px;">
+                            <span>待评论</span>&ensp;&ensp;|&ensp;
+                            <span style="color: gray;">已评论</span>
+                        </p>
+                        <span style="display: block; padding-top: 10px;">您暂无待评论商品！</span>
+                    </div>
+                    <div class="acc-right">
+                        <h2>我的收藏</h2>
+                        <p style="border-bottom: 1px black solid;padding-bottom: 10px;">
+                            <span>收藏的商品</span>&ensp;&ensp;|&ensp;
+                            <span style="color: gray;">收藏的品牌</span>
+                        </p>
+                        <span style="display: block; padding-top: 10px;">您还没有收藏商品，立即去<a href="/" style="color: red; text-decoration: underline;">首页</a>寻找喜欢的商品体验通过收藏快速抢购吧</span>
+                    </div>
+                    <div class="acc-right">
+                        <h2>个人信息维护</h2>
+                    </div>
+                    <div class="acc-right">
+                        <h2>修改密码</h2>
+                    </div>
+                    <div class="acc-right">
+                        <h2>地址信息维护</h2>
+                    </div>
+                    <div class="acc-right">
+                        <h2>账户余额</h2>
+                        <p>账户余额：<span style="color: red;">￥0.00</span>元</p>
+                    </div>
+                    <div class="acc-right">
+                        <h2>优惠券</h2>
+                        <p style="border-bottom: 1px black solid;padding-bottom: 10px;">
+                            <span>可使用</span>&ensp;&ensp;|&ensp;
+                            <span style="color: gray;">已使用</span>&ensp;&ensp;|&ensp;
+                            <span style="color: gray;">已过期</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <% include ./footer.ejs %>
+</body>
+
+</html>
+<script src="js/cookie.js"></script>
+<script src="js/shouye.js"></script>
+<script src="js/account.js"></script>

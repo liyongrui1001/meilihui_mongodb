@@ -1,0 +1,37 @@
+.account {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.account h1 {
+  font-weight: normal;
+  border-bottom: 1px black solid;
+  padding-bottom: 10px;
+}
+.account .acc-left {
+  width: 200px;
+  float: left;
+}
+.account .acc-left li {
+  height: 50px;
+  line-height: 50px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.account .acc-on {
+  list-style: disc;
+  color: red;
+}
+.account .acc-right {
+  width: 800px;
+  display: none;
+  float: left;
+  padding: 20px;
+}
+.account h2 {
+  margin-bottom: 20px;
+}
+.account .acc-right1 {
+  margin-left: 30px;
+  float: left;
+}

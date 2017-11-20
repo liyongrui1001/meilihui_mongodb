@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/shouye.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <script src="js/template.js"></script>
+    <script src="js/ajax.js"></script>
+
+</head>
+
+<body>
+    <% include ./header.ejs %>
+        <% include ./nav.ejs %>
+            <div id="list-main">
+                <div class="list-top">
+                    <p class="list-tl"><a href="/">首页</a>&gt;<a href="javascript:;">家居</a>&gt;<span>LA CHANSON</span></p>
+                    <p><i class="iconfont">&#xf00f9;</i>活动剩余&ensp;<span class="lxftime" endtime="1/1/2018 00:00:00"></span></p>
+                </div>
+                <div class="list-ttop">
+                    <p><span class="list-ttll">LA CHANSON &ensp;至爱香颂教师节永生花特辑</span>&ensp;&ensp;<span class="list-ttlr">6.8折起</span></p>
+                    <p><a href="javascript:;">+收藏品牌</a></p>
+
+                </div>
+                <div class="list-center">
+                    <div class="list-ct">
+                        <p>满688元全场免运</p>
+                    </div>
+                    <div class="list-cb">
+                        <p>品牌故事</p>
+                        <span>La Chanson 至爱香颂，高端花艺品牌，向消费者提供高质量的花艺消费品。作为奢华的定制礼品，至爱香颂也与一众高端品牌积极合作，商业合作伙伴有包括万宝龙、赫莲娜、蜜丝佛陀、馥蕾诗、麦丝玛拉等。<a href="javascript:;">更多</a></span>
+                    </div>
+                </div>
+                <div class="list-ccenter">
+                    <p>
+                        <input type="button" value="默认排序" style="width: 80px; height: 30px; margin-right: 10px;" />
+                        <input type="button" value="价格&ensp;↑↓" / style="width: 80px; height: 30px;">
+                    </p>
+                    <p>共14个商品&ensp;&ensp;1/1&ensp;
+                        <input type="button" value="<" style="width: 30px; height: 30px; margin-right: 10px;" />
+                        <input type="button" value=">" style="width: 30px; height: 30px;" />
+                    </p>
+                </div>
+                <div class="list-main">
+                    <% for (var i=0; i<goods.length; i++) { %>
+                        <div class="shop-box">
+                            <div class="shop-tui">买手推荐</div>
+                            <a href="/page?id=<%= goods[i].id %>">
+                                <img src="images/<%= goods[i].src %>" class="shop-img" />
+                                <ul class="shop-small">
+                                    <li><img src="images/d<%= goods[i].src %>" /></li>
+                                    <li><img src="images/e<%= goods[i].src %>" /></li>
+                                    <li><img src="images/f<%= goods[i].src %>" /></li>
+                                </ul>
+                            </a>
+
+                            <div class="shop-b">
+                                <p>LA CHANSON</p>
+                                <p>
+                                    <%= goods[i].name %>
+                                </p>
+                                <p>
+                                    <span style="color: red;">￥<%= goods[i].price %></span>
+                                    <span style="text-decoration: line-through; font-size:12px;">￥<%= goods[i].yuan %></span>
+                                </p>
+                            </div>
+                        </div>
+                        <% } %>
+
+                </div>
+            </div>
+            <% include ./footer.ejs %>
+
+</body>
+
+</html>
+<script src="js/cookie.js"></script>
+<script src="js/shouye.js"></script>
+<script src="js/list.js"></script>

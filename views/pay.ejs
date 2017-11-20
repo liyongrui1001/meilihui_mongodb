@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/shouye.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/pay.css" />
+</head>
+
+<body>
+    <% include ./header.ejs %>
+        <% include ./nav.ejs %>
+            <div class="pay-top">
+                <h1>确认订单信息</h1>
+                <h3>收货地址</h3>
+                <div class="add">
+                    <p style="margin-top: 30px; padding-bottom: 20px;">使用新地址</p>
+                    <p class="dizhi">&ensp;&ensp;收货人：<input type="text" class="name" /></p>
+                    <p class="dizhi">手机号码：<input type="text" class="phone" /></p>
+                    <p class="dizhi">所在地区：
+                        <select class="prov">
+						<option>请选择省</option>
+					</select>
+                        <select class="city">
+						<option>请选择市</option>
+					</select>
+                        <select class="country">
+						<option>请选择县</option>
+					</select>
+                    </p>
+                    <p class="dizhi">详细地址：<input type="text" class="add-xiang" /></p>
+                    <p class="dizhi">邮政编码：<input type="text" class="add-you" />&ensp;&ensp;错误的邮编可能导致派送延迟或无法送达，请谨慎填写</p>
+                    <p><input type="button" value="送到该地址" class="pay-ti" /></p>
+                    <!--<div class="addres">
+					<div class="add-top">
+						<p>默认地址</p>
+						<p><a>编辑</a><span>×</span></p>
+					</div>
+					<p><span class="add-name">李</span><span class="add-ph">123</span></p>
+					<p><span class="add-prov">1</span><span class="add-city">2</span><span class="add-country">3</span><span class="add-add">4</span></p>
+					<p class="add-num">111</p>
+					<p style="text-align: right;"><input type="checkbox" checked /></p>
+				</div>
+				<span class="add-new">使用新地址</span>-->
+                </div>
+            </div>
+            <div class="pay-center">
+                <h3>支付方式</h3>
+                <p>请选择适合您的支付方式：</p>
+                <div class="pay-cb">
+                    <p class="pay-cbt">第三方支付</p>
+                    <div class="pay-cbb">
+                        <img src="images/zhifubao.gif" />
+                        <img src="images/zhifubaosaoma.gif" />
+                        <img src="images/weixinsaoma.gif" />
+                    </div>
+                </div>
+            </div>
+            <div class="pay-bottom">
+                <h3>购物清单</h3>
+                <div class="pay-bt">
+                    温馨提示：商品库存有限，建议尽快提交订单，闪购到心仪的商品；促销优惠将按比例分摊至商品中。
+                </div>
+                <div class="pay-pp">
+                    <p class="pay-ppl">
+                        <span class="pay-ppl1">品牌直发</span>
+                        <img src="images/icon_countdown.gif" />
+                        <span class="pay-ppl2">预计送达日期：</span> 2017年09月
+                        <span class="pay-date">14</span>日
+                    </p>
+                    <p>单价</p>
+                    <p>数量</p>
+                    <p>优惠</p>
+                    <p>小计</p>
+                </div>
+                <div class="pay-s">
+                    <!--<div class="pay-shop">
+					<div class="pay-shopl">
+						<img src="images/shop01.jpg" style="width: 60px; height: 80px;" />
+						<div class="pay-shoplr">
+							<p style="font-weight: bold;">LA CHANSON</p>
+							<p class="pay-shopn">红色洛丽塔暖光永生花景观瓶</p>
+							<p class="pay-shopc">红色</p>
+						</div>
+					</div>
+					<p class="pay-shopd">单价</p>
+					<p class="pay-shops">数量</p>
+					<p class="pay-shopy">优惠</p>
+					<p class="pay-shopx">小计</p>
+				</div>-->
+                </div>
+                <div class="pay-bb">
+                    <p>是否需要开立发票？
+                        <input type="radio" name="fa" checked />不需要
+                        <input type="radio" name="fa" />需要
+                    </p>
+                    <div class="pay-bbb">
+                        <p><a href="javascript:;" class="pay-you">使用优惠券</a></p>
+                        <div style="text-align: right;">
+                            商品小计：￥<span class="pay-num">399</span>.00<br /> +运费：￥
+                            <span class="pay-yun">10</span>.00<br /> =应付：
+                            <span class="pay-sum">￥409.00</span><br />
+                            <span class="pay-btn">提交订单</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% include ./footer.ejs %>
+</body>
+
+</html>
+<script src="js/cookie.js"></script>
+<script src="js/shouye.js"></script>
+<script src="js/pay.js"></script>

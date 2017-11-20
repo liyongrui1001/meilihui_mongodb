@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/shouye.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-resource.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <script>
+        window.onload = function() {
+            let vm = new Vue({
+                el: "#app",
+                data: {
+
+                },
+                methods: {
+                    getIndex() {
+                        this.$http({
+                            url: "/shouye",
+                            method: "get"
+                        }).then((res) => {
+                            console.log(res)
+                        }, (res) => {
+                            console.log(res)
+                        })
+                    }
+                },
+                mounted() {
+                    this.getIndex();
+                }
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <% include ./header.ejs %>
+            <% include ./nav.ejs %> -->
+
+        <div id="main">
+            <div id="big">
+                <a href="/list"><img src="images/big.jpg" /></a>
+            </div>
+            <div class="main_pic">
+                <div class="jinri">
+                    <p class="img-top-zi">[今日上新]</p>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/01.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/02.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/03.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/04.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <!--<a href="/list" class="imp lun">
+						<img src="images/1001.jpg" class="lunbo"/>
+						<img src="images/1002.jpg" class="lunbo"/>
+					</a>-->
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/05.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/06.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/07.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/08.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/09.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/10.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/11.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/12.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/13.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/14.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/15.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/16.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="remai">
+                    <p class="img-top-zi">[热卖品牌]</p>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/17.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/18.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/19.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/20.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/21.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/22.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/23.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/24.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="nvshi">
+                    <p class="img-top-zi">[女士活动]</p>
+                    <a href="/list" class="imp ban">
+                        <img src="images/1003.jpg" class="nvshi-ban" />
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/25.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/26.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/27.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/28.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/29.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/30.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/31.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/32.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/33.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/34.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="img-more">查看更多》</a>
+                </div>
+                <div class="nanshi">
+                    <p class="img-top-zi">[男士活动]</p>
+                    <a href="/list" class="imp ban">
+                        <img src="images/1003.jpg" class="nanshi-ban" />
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/35.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/36.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/37.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/38.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="img-more">查看更多》</a>
+                </div>
+                <div class="meizhuang">
+                    <p class="img-top-zi">[美妆活动]</p>
+                    <a href="/list" class="imp ban">
+                        <img src="images/1003.jpg" class="meizhuang-ban" />
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/39.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/40.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/41.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/42.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/43.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/44.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/45.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="img-more">查看更多》</a>
+                </div>
+                <div class="jiaju">
+                    <p class="img-top-zi">[家居活动]</p>
+                    <a href="/list" class="imp ban">
+                        <img src="images/1003.jpg" class="jiaju-ban" />
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/46.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/47.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/48.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/49.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="img-more">查看更多》</a>
+                </div>
+                <div class="yingtong">
+                    <p class="img-top-zi">[婴童活动]</p>
+                    <a href="/list" class="imp ban">
+                        <img src="images/1003.jpg" class="yingtong-ban" />
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/50.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/51.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/52.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/53.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="img-more">查看更多》</a>
+                </div>
+                <div class="haiwai">
+                    <p class="img-top-zi">[海外活动]</p>
+                    <a href="/list" class="imp ban">
+                        <img src="images/1003.jpg" class="haiwai-ban" />
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/54.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/55.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/56.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="/list" class="imp">
+                        <div class="img-t">
+                            <img src="images/57.jpg" / class="img-m">
+                            <div class="img-zhe"></div>
+                            <p class="img-zi">4.1折起</p>
+                        </div>
+                        <div class="img-b">
+                            <p class="b_l">JIL SANDER MCM等 多品牌男士奢品汇</p>
+                            <p class="b_r">4.1折起</p>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="img-more">查看更多》</a>
+                </div>
+            </div>
+        </div>
+        <!-- <% include ./returntop.ejs %>
+            <% include ./huodong.ejs %>
+                <% include ./footer.ejs %> -->
+    </div>
+</body>
+
+</html>
+<script src="js/cookie.js"></script>
+<script src="js/shouye.js"></script>
+<!-- <script src="js/vue-1.js"></script> -->
+<script>
+    //console.log(user)
+</script>

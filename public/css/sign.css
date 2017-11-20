@@ -1,0 +1,147 @@
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		font-size: 14px;
+  		font-family: "微软雅黑";
+		width: 100%;
+		background: #eee;
+	}
+	ul li{
+		list-style: none;
+	}
+	.logn-wrap{
+		width:100%;
+		background: #eee;
+	}
+	.login-container{
+		width: 1000px;
+		height:827px;
+		margin: 0 auto;
+		position: relative;
+		background: url(../images/sign.jpg) no-repeat;
+	}
+	.login-logo{
+		width:400px;
+		margin: 0 auto;
+	}
+	.loginlo{
+		font-size: 20px;
+		color: gray;
+	}
+	.login-content{
+		width: 1000px;
+		height: 650px;
+		position: relative;
+	}
+	.login-main{
+		width:350px;
+		height: 450px;
+		position: absolute;
+		right:150px;
+		padding-top: 50px;
+	}
+	.hydl-regsiter{
+		width: 250px;
+		margin:20px 0 10px 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.hydl-l{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.hydl-r a{
+		color: red;
+	}
+	.newPeople{
+		color:red;
+		margin:10px 0 10px 100px;
+	}
+	.hydl-login{
+		width:350px;
+		height: 350px;
+		position: relative;
+		border-bottom: 1px black solid;
+	}
+	.hydl-login p{
+		position: absolute;
+		right: 0;
+	}
+	.hydl-login-auto{
+		width:250px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.hydl-login-auto a{
+		color:black;
+	}
+	#login-s1,#login-s2,#login-s3,#login-s4,#login-s5{
+		color:red;
+	}
+	#sign-yan1{
+		display: block;
+		border: 1px #999 solid;
+		float: right;
+		font-size: 20px;
+		text-align: center;
+		cursor:pointer;
+	}
+	#yan-btn{
+		background: white;
+		border:1px #999 solid;
+		font-size: 20px;
+	}
+	#sign-btn{
+		color: white;
+		background: red;
+		border:none;
+		font-size: 20px;
+	}
+	.login-er{
+		margin:20px 0 0 100px ;
+		overflow: hidden;
+	}
+	.login-erl,.login-err{
+		float: left;
+	}
+	.login-err{
+		margin-top: 20px;
+	}
+	.login-err p{
+		text-align: center;
+		color: black;
+	}
+	.footer_advantage {
+	    height: 140px;
+	}
+	.footer_advantage_u {
+	  	width: 1000px;
+	  	height: 100px;
+	  	margin: 0 auto;
+	  	display: flex;
+	  	justify-content: space-around;
+	}
+	.footer_advantage_u li {
+	  	display: flex;
+	  	flex-direction: column;
+	  	justify-content: space-around;
+	  	align-items: center;
+	}
+	.footer_advantage_u .iconfont {
+	 	font-size: 50px;
+	}
+	.footer_advantage_u li:hover,
+	.footer_link a:hover {
+	  	color: red;
+	}
+	.footer_advantage_u li a{
+		color: black;
+		text-decoration: none;
+	}
+	.footer_copyright {
+  	    width: 600px;
+        margin: 10px auto;
+	}
